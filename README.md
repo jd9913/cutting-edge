@@ -21,8 +21,11 @@ Description
 
 :computer: [Usage Information](usage)
 ===
->use for scheduling appointments for a small business, target business is a hair salon<br>
+>use for scheduling appointments for a small business, target business is a hair salon
 >Example screen shots:
+
+![](cuttingEdge.gif)
+
 
 ![](cuttingEdge.gif)
 
