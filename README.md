@@ -57,5 +57,3 @@ Footer
 -----
 
 Made with love :gift_heart: by jd9913, terahje, aksmith5239.<br>:copyright: 2020
-
-        
