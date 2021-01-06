@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const {Service, Stylist, Appointment, Customer} = require('../models');
 
+
 router.get('/', (req, res) => {
     
     Service.findAll({

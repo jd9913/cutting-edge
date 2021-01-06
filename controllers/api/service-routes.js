@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Service, Stylist, Customer, Appointment } = require('../../models');
+const withAuth = require("../../utils/auth");
 
 //get api/service
 router.get('/', (req, res) => {
@@ -65,7 +66,7 @@ router.get('/:id', (req, res) => {
 });
 
 //post api/service
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     Service.create({
         category: req.body.category,
         style: req.body.style,
@@ -83,7 +84,7 @@ router.post('/', (req, res) => {
 });
 
 //put api/service/i
-router.put('/:id', (req, res) => {
+router.put('/:id', withAuth, (req, res) => {
     Service.update(req.body, {
         individualHooks: true,
         where: {
@@ -104,7 +105,7 @@ router.put('/:id', (req, res) => {
 });
 
 //delete api/service/i
-router.delete('/:id', (req, res) => {
+router.delete('/:id', withAuth, (req, res) => {
     Service.destroy({
         where: {
             id: req.params.id
