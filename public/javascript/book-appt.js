@@ -33,8 +33,8 @@ const response = await fetch(`/api/appointment/` , {
     }
 });
 
-if(response.ok) { 
-    document.location.replace('/dashboard/'+customer_id);
+if(response.ok) {
+    document.location.replace('/dashboard');
 } else {
     alert(response.statusText);
 }
